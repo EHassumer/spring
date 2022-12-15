@@ -8,7 +8,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class ProjectSecurityConfig  /*extends WebSecurityConfigurerAdapter*/  {
 
-    /*@Override
+    @Override
     protected void configure(HttpSecurity http) throws Exception {
 
         // Permit All Requests inside the Web Application
@@ -16,13 +16,8 @@ public class ProjectSecurityConfig  /*extends WebSecurityConfigurerAdapter*/  {
                     anyRequest().permitAll().
                     and().formLogin()
                     .and().httpBasic();
-
-        // Deny All Requests inside the Web Application
-        *//*http.authorizeRequests().
-                anyRequest().denyAll().
-                and().formLogin()
-                .and().httpBasic();*//*
-    }*/
+       
+    }
 
     /**
      * From Spring Security 5.7, the WebSecurityConfigurerAdapter is deprecated to encourage users
